@@ -54,7 +54,8 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
         "Send **Auth code** in this manner otherwise bot will not respond.\n\nSend like this:-  **AUTH CODE**"
     )  
-    input1: Message = await bot.listen(editable.chat.id)
+    # input1: Message = await bot.listen(editable.chat.id)
+    input1 = await bot.listen(editable.chat.id)
     raw_text1=input1.text
     headers = {
 
