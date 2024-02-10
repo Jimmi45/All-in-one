@@ -3,11 +3,12 @@
 # (c) ACE 
 
 import os
+from os import getenv
 
 class Config(object):
     # get a token from @BotFather
-    BOT_TOKEN = "6463730780:AAHqCQHZYG5s5veU3NfCyceYQ0HbSe_oaCM"
-    API_ID = "10551685"
-    API_HASH = "477dff815fdc7cba803c1bc02c459d03"
-    AUTH_USERS = '1476002847'
+    BOT_TOKEN = getenv("BOT_TOKEN")
+    API_ID = getenv("API_ID")
+    API_HASH = getenv("API_HASH")
+    AUTH_USERS = getenv("AUTH_USERS")
 
